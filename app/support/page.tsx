@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -26,8 +26,8 @@ export default function Support() {
       }
     };
   
-    const handleSubmit = (e:any) => {
-      e.preventDefault();
+    const handleSubmit = () => {
+    //   e.preventDefault();
       // Handle form submission here
       console.log('Submitted:', { email, message });
       // Reset form fields
@@ -51,7 +51,7 @@ export default function Support() {
         </motion.h1>
         
         <motion.p variants={itemVariants} className="text-gray-700 mb-8 text-center">
-          We're here to help! Please fill out the form below and we'll get back to you as soon as possible.
+          We`&apos;`re here to help! Please fill out the form below and we`&apos;`ll get back to you as soon as possible.
         </motion.p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
