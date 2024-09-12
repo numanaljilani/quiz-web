@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
-function page() {
+function Privacy() {
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -87,4 +87,4 @@ function page() {
   )
 }
 
-export default page
+export default Privacy

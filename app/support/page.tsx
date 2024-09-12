@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-export default function page() {
+export default function Support() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
   
