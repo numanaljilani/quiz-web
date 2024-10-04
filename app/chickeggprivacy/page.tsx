@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const PrivacyPolicy = () => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(0);
 
   const sections = [
     {
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
         >
           <motion.h2
             className="text-2xl font-semibold mb-2 cursor-pointer"
-            onClick={() => setActiveSection(activeSection === index ? null : index)}
+            onClick={() => setActiveSection(activeSection === index ? 0 : index)}
           >
             {section.title}
           </motion.h2>
