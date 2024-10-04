@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const PrivacyPolicy = () => {
-  const [activeSection, setActiveSection] = useState<any>(null);
+  const [activeSection, setActiveSection] = useState<null | number>(null);
 
   const sections = [
     {
